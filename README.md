@@ -1,12 +1,13 @@
-# babel-node
 
-A modern Node.js project template using Babel for ES6+ support.
+# babel-node-typescript
+
+A modern Node.js project template using Babel for ES6+/TypeScript support.
 
 ## Features
 
-- Babel with `@babel/preset-env` for modern JavaScript syntax
-- Example [`Car`](src/car.js) class using ES6 modules
-- Entry point: [`index.js`](index.js) demonstrates usage of the Car class
+- Babel with `@babel/preset-env` and `@babel/preset-typescript` for modern JavaScript and TypeScript syntax
+- Example [`Car`](src/car.ts) class using ES6 modules and TypeScript
+- Entry point: [`index.ts`](src/index.ts) demonstrates usage of the Car class
 - Development mode with hot-reloading via Nodemon and Babel Node
 - Production-ready build process with transpiled output
 
@@ -21,13 +22,13 @@ A modern Node.js project template using Babel for ES6+ support.
    ```sh
    npm run dev
    ```
-   This uses Nodemon and Babel Node to run [`index.js`](index.js) with automatic reload on changes.
+   This uses Nodemon and Babel Node to run [`src/index.ts`](src/index.ts) with automatic reload on changes.
 
 3. **Build for production:**
    ```sh
    npm run build
    ```
-   This transpiles the source code from `src/` to `dist/` directory using Babel.
+   This transpiles the TypeScript source code from `src/` to `dist/` directory using Babel.
 
 4. **Run in production mode:**
    ```sh
@@ -40,10 +41,11 @@ A modern Node.js project template using Babel for ES6+ support.
 ```
 .
 ├── src/              # Source directory
-│   ├── index.js      # Entry point, imports and uses Car class
-│   └── car.js        # Car class (ES6 module)
-├── dist/             # Production build output (generated)
+│   ├── index.ts      # Entry point, imports and uses Car class (TypeScript)
+│   └── car.ts        # Car class (TypeScript, ES6 module)
+├── dist/             # Production build output (generated, JS)
 ├── babel.config.js   # Babel configuration
+├── tsconfig.json     # TypeScript configuration
 ├── package.json      # Project metadata and scripts
 └── ...
 ```
