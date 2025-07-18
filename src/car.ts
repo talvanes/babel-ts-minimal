@@ -1,5 +1,8 @@
 export default class Car {
-    constructor(make, model) {
+    private readonly make: string
+    private readonly model: string
+
+    constructor(make: string, model: string) {
         this.make = make
         this.model = model
     }

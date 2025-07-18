@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "moduleResolution": "node",
+    "allowJs": true,
+    "noEmit": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "rootDir": "src",
+    "outDir": "dist"
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx"
+  ],
+}
