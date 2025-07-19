@@ -1,7 +1,14 @@
 import Car from "./car"
 
-let toyotaCorolla = new Car("Toyota", "Corolla")
-toyotaCorolla.startEngine()
+const cars = new Set([
+    ["Toyota", "Corolla"],
+    ["Ford", "Mustang"],
+    ["Honda", "Civic"],
+    ["Tesla", "Model S"],
+    ["Volkswagen", "Jetta"]
+])
 
-let fordMustang = new Car("Ford", "Mustang")
-fordMustang.startEngine()
+cars.forEach(([make, model]) => {
+    let car = new Car(make, model)
+    car.startEngine()
+})
