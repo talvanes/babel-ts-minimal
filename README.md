@@ -1,5 +1,5 @@
 
-# babel-node-typescript
+# babel-ts-minimal
 
 A modern Node.js project template using Babel for ES6+/TypeScript support.
 
@@ -8,7 +8,7 @@ A modern Node.js project template using Babel for ES6+/TypeScript support.
 - Babel with `@babel/preset-env` and `@babel/preset-typescript` for modern JavaScript and TypeScript syntax
 - Example [`Car`](src/car.ts) class using ES6 modules and TypeScript
 - Entry point: [`index.ts`](src/index.ts) demonstrates usage of the Car class
-- Development mode with hot-reloading via Nodemon and Babel Node
+- Development mode with hot-reloading via Nodemon and TS Node
 - Production-ready build process with transpiled output
 
 ## Getting Started
@@ -52,5 +52,5 @@ A modern Node.js project template using Babel for ES6+/TypeScript support.
 
 ## License
 
-See [`LICENSE.txt`](LICENSE.txt).
+See [`LICENSE`](LICENSE).
 
